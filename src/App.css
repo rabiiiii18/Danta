@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+*{
+  font-family: "Marcellus", serif;
+}
+.underline-from-group::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.5s ease;
+}
+
+.group:hover .underline-from-group::before {
+  width: 100%;
+}
