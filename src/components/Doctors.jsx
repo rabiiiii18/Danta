@@ -2,7 +2,7 @@ import React from "react";
 
 const Doctors = () => {
   return (
-    <div className=" px-10 border-y border-y-gray-300">
+    <div className=" px-10 border-t border-t-gray-300">
       <div className="flex justify-between gap-15 py-10">
         <div className="w-[65%] h-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 shadow-md px-3 py-4">

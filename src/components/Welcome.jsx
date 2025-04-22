@@ -25,7 +25,7 @@ const Welcome = () => {
         <div className="me-5">
           <img
             className="rounded-3xl shadow-lg"
-            src="/before-img.png"
+            src="/after-img.png"
             alt="Before treatment"
           />
         </div>

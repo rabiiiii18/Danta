@@ -2,7 +2,7 @@ import React from "react";
 
 const Service = () => {
   return (
-    <div className="relative bg-[#01393f] text-white text-center py-20 px-4 h-auto">
+    <div className="relative bg-[rgb(1,57,63)] text-white text-center py-20 px-4 h-auto">
       <div className="absolute inset-0 bg-[url('/row-bgimage-1.png')] bg-cover bg-fixed opacity-20 pointer-events-none"></div>
 
       <div className="relative z-10">
