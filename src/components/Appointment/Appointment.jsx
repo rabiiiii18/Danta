@@ -1,19 +1,34 @@
 import React from "react";
 import Navbar from "../Navbar";
 import { Asterisk, ChevronRight } from "lucide-react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Box from '../Box';
+import Box from "../Box";
 import Footer from "../Footer";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Appointment = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    control,
     formState: { errors },
   } = useForm();
+
+  const onError = (errors) => {
+    const firstError = Object.values(errors)[0];
+    if (firstError) {
+      toast.error(firstError.message || "* Fields are mandatory.");
+    }
+  };
+  
+  const onSubmit = (data) => {
+    toast.success("Form submitted succeessfully.");
+  };
+  
   return (
     <div>
       <Navbar />
@@ -31,7 +46,7 @@ const Appointment = () => {
         </div>
       </div>
 
-      <form action="">
+      <form onSubmit={handleSubmit(onSubmit, onError)}>
         <div className=" h-[100vh] mx-20 mt-20">
           <div className="flex gap-20">
             <div className="flex flex-col flex-1">
@@ -44,8 +59,9 @@ const Appointment = () => {
               <input
                 className="border border-[#888] outline-0 rounded-md px-3 py-1 mt-2 poppins text-base text-[#888]"
                 placeholder="Enter Fist Name"
-                {...register("firstName", { required: true })}
-              />
+                {...register("firstname", { required: true })}
+                />
+                
             </div>
             <div className="flex flex-col flex-1">
               <label
@@ -57,7 +73,7 @@ const Appointment = () => {
               <input
                 className="border border-[#888] outline-0 rounded-md px-3 py-1 mt-2 poppins text-base text-[#888]"
                 placeholder="Enter Last Name"
-                {...register("firstName", { required: true })}
+                {...register("lastname", { required: true })}
               />
             </div>
             <div className="flex flex-col flex-1">
@@ -70,7 +86,7 @@ const Appointment = () => {
               <input
                 className="border border-[#888] outline-0 rounded-md px-3 py-1 mt-2 poppins text-base text-[#888]"
                 placeholder="Enter Your Email"
-                {...register("firstName", { required: true })}
+                {...register("email", { required: true })}
               />
             </div>
             <div className="flex flex-col flex-1">
@@ -80,12 +96,19 @@ const Appointment = () => {
               >
                 Phone <Asterisk size={12} color="red" />
               </label>
-              <PhoneInput
-                inputStyle={{ width: "100%", border: "none" }}
-                buttonStyle={{ border: "none" }}
-                className="border border-[#888] rounded-md mt-2 poppins text-base text-[#888]"
-                {...register("firstName", { required: true })}
-                country={"nepal"}
+              <Controller
+                name="phone"
+                control={control}
+                rules={{ required: true }}
+                render={({ field }) => (
+                  <PhoneInput
+                    {...field}
+                    country="np"
+                    inputStyle={{ width: "100%", border: "none" }}
+                    buttonStyle={{ border: "none" }}
+                    containerClass="border border-[#888] rounded-md mt-2 poppins text-base text-[#888]"
+                  />
+                )}
               />
             </div>
           </div>
@@ -100,6 +123,7 @@ const Appointment = () => {
             <textarea
               name="message"
               placeholder="Enter description"
+              {...register("message")}
               className="border border-[#888] rounded-md  outline-0  px-3 py-1 mt-2 poppins text-base text-[#888]"
               id=""
               rows={8}
@@ -197,7 +221,7 @@ const Appointment = () => {
 
               <select
                 className="border border-[#888] outline-0 rounded-md px-3 py-1 mt-2 poppins text-base text-[#888]"
-                {...register("time")}
+                {...register("methods")}
               >
                 <option value="" className="text-[#888]">
                   Select Payment Method
@@ -207,7 +231,10 @@ const Appointment = () => {
               </select>
             </div>
             <div className="flex items-end">
-              <button className="px-5 py-2 text-white rounded-md bg-[#004149] cursor-pointer">
+              <button
+                type="submit"
+                className="px-5 py-2 text-white rounded-md bg-[#004149] cursor-pointer"
+              >
                 Book Appointment
               </button>
             </div>
@@ -223,9 +250,9 @@ const Appointment = () => {
           </h1>
         </div>
         <div className="my-20">
-        <Box/>
+          <Box />
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
