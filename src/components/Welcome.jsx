@@ -2,7 +2,7 @@ import React from "react";
 
 const Welcome = () => {
   return (
-    <div className="h-[130vh] flex border-b border-b-gray-300 ">
+    <div className="h-[110vh] flex border-b border-b-gray-300 ">
       <div className="w-[65%] relative z-0 ">
         <div className="pt-20 ms-5 z-10 relative  ">
           <span className="text-[20px] leading-[28px] font-normal">

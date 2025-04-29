@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="h-[80vh] bg-black pt-20 ">
+    <div className=" bg-black pt-20 ">
       <div className="flex gap-20 ms-8">
         <div className="flex-1  h-86">
           <div className="flex  flex-col gap-15">
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1  h-86">
+        <div className="flex-1  h-86 ">
           <div>
             <div className="flex gap-10">
               <div className="w-[30%]">
@@ -77,9 +77,10 @@ const Footer = () => {
                   Open Hours
                 </h2>
               </div>
-              <div className="w-[70%] flex flex-col gap-5">
+              <div className="w-[70%] flex flex-col gap-8">
                 <p className="text-[#888] text-[18px] leading-[28px]">
-                  Mon-Fri: 9 AM - 6 PM Saturday: 9 AM - 4 PM Sunday: Closed
+                  Mon-Fri: 9 AM - 6 PM <br />
+                   Saturday: 9 AM - 4 PM  <br />Sunday: Closed
                 </p>
               </div>
             </div>
@@ -87,7 +88,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-b border-b-gray-100"></div>
-      <p className="text-center text-base leading-[25px] text-[#888] mt-10">Copyright © 2025 Danta. All rights reserved. Designed By Ravi Shrestha</p>
+      <p className="text-center text-base leading-[25px] text-[#888] py-8">Copyright © 2025 Danta. All rights reserved. Designed By Ravi Shrestha</p>
     </div>
   );
 };

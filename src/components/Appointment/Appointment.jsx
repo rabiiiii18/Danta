@@ -47,7 +47,7 @@ const Appointment = () => {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit, onError)}>
-        <div className=" h-[100vh] mx-20 mt-20">
+        <div className=" h-auto mx-20 mt-20">
           <div className="flex gap-20">
             <div className="flex flex-col flex-1">
               <label
@@ -242,7 +242,7 @@ const Appointment = () => {
         </div>
       </form>
 
-      <div className="pt-15">
+      <div className="mt-26">
         <div className="flex justify-center flex-col items-center">
           <span className="text-[18px] leading-[28px]">/ Our Service</span>
           <h1 className="text-[72px] leading-[85px] ">

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Partnering = () => {
   return (
     <div className="flex justify-between bg-[#f7f7f7] ">
-      <div className="pt-30 px-8 h-[75vh] w-[50%] border-e border-e-gray-300">
+      <div className="py-30 px-8  w-[50%] border-e border-e-gray-300">
         <span className="text-[20px] leading-[28px] font-normal">
           / Partnering in health
         </span>
@@ -15,11 +15,11 @@ const Partnering = () => {
           Preventative & restorative dental treatments
         </span>
       </div>
-      <div className="w-[50%] pt-25">
+      <div className="w-[55%] pt-25">
         <motion.h1
           className="text-[330px] leading-[260px] text-[#EEE2D9] text-center "
           animate={{
-            x: [0, -5, 2, -1, 1, 0],
+            x: [0, -5, -1, 1, 0],
           }}
           transition={{
             duration: 5,
@@ -30,6 +30,7 @@ const Partnering = () => {
         >
           1997
         </motion.h1>
+        
       </div>
     </div>
   );

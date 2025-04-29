@@ -24,10 +24,10 @@ const Navbar = () => {
           <Link to="/" className="text-[17px] font-normal">
             Service
           </Link>
-          <Link to="/" className="text-[17px] font-normal">
+          <Link to="/team" className="text-[17px] font-normal">
             Team
           </Link>
-          <Link to="/" className="text-[17px] font-normal">
+          <Link to="/contact" className="text-[17px] font-normal">
             Contact
           </Link>
         </div>

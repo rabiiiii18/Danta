@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Appointment from "./components/Appointment/Appointment.jsx";
 import { ToastContainer } from "react-toastify";
 import AboutUs from "./components/Appointment/Pages/AboutUs.jsx";
+import Team from "./components/Team.jsx";
+import Contact from "./components/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path:'/about-us',
     element:<AboutUs/>
+  },
+  {
+    path:'/team',
+    element:<Team/>
+  },
+  {
+    path:'/contact',
+    element:<Contact/>
   }
 ]);
 
