@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col gap-10">
             <div className="flex gap-6">
               <div className="w-[30%]">
-                <h2 className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+                <h2 className="text-[#888] text-[18px] leading-[28px]">
                   Service
                 </h2>
               </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                   <Link
                     key={idx}
                     to="/"
-                    className="text-[#888] text-base lg:text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
+                    className="text-[#888] text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
                   >
                     {item}
                   </Link>
@@ -28,12 +28,12 @@ const Footer = () => {
             </div>
             <div className="flex gap-6">
               <div className="w-[30%]">
-                <h2 className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+                <h2 className="text-[#888] text-[18px] leading-[28px]">
                   Book now
                 </h2>
               </div>
               <div className="w-[70%]">
-                <p className="text-[#888] text-base lg:text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out cursor-pointer">
+                <p className="text-[#888] text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out cursor-pointer">
                   Get Appointment
                 </p>
               </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="flex flex-col gap-10">
             <div className="flex gap-6">
               <div className="w-[30%]">
-                <h2 className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+                <h2 className="text-[#888] text-[18px] leading-[28px]">
                   Quick Links
                 </h2>
               </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                   <Link
                     key={idx}
                     to="/"
-                    className="text-[#888] text-base lg:text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
+                    className="text-[#888] text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
                   >
                     {item}
                   </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
             <div className="flex gap-6">
               <div className="w-[30%]">
-                <h2 className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+                <h2 className="text-[#888] text-[18px] leading-[28px]">
                   Socials
                 </h2>
               </div>
@@ -73,7 +73,7 @@ const Footer = () => {
                   <Link
                     key={idx}
                     to="/"
-                    className="text-[#888] text-base lg:text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
+                    className="text-[#888] text-[18px] leading-[28px] hover:text-white transition duration-300 ease-in-out"
                   >
                     {platform}
                   </Link>
@@ -87,12 +87,12 @@ const Footer = () => {
         <div className="flex-1 min-w-[250px]">
           <div className="flex gap-6">
             <div className="w-[30%]">
-              <h2 className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+              <h2 className="text-[#888] text-[18px] leading-[28px]">
                 Open Hours
               </h2>
             </div>
             <div className="w-[70%] flex flex-col gap-3">
-              <p className="text-[#888] text-base lg:text-[18px] leading-[28px]">
+              <p className="text-[#888] text-[18px] leading-[28px]">
                 Mon-Fri: 9 AM - 6 PM <br />
                 Saturday: 9 AM - 4 PM <br />
                 Sunday: Closed
@@ -104,7 +104,7 @@ const Footer = () => {
 
       {/* Bottom Line */}
       <div className="border-b border-gray-800 my-6" />
-      <p className="text-center text-sm lg:text-base leading-[25px] text-[#888] py-6">
+      <p className="text-center text-sm lg:leading-[25px] text-[#888] py-6">
         © 2025 Danta. All rights reserved. Designed by Ravi Shrestha
       </p>
     </div>
