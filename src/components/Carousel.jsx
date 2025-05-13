@@ -3,7 +3,7 @@ import React from "react";
 const Carousel = () => {
   return (
     <div className="relative">
-      <img   className="w-full lg:h-[110vh] h-[40vh] object-cover object-fit" src="/bg_2.jpg" alt="" />
+      <img   className="w-full lg:h-[110vh] h-[35vh] object-cover object-fit" src="/bg_2.jpg" alt="" />
       <div className="absolute bottom-0 right-0 lg:top-[22%] top-[2%] lg:w-[52%] lg:mr-8 flex flex-col lg:items-end items-center justify-center ">
         <div className="flex gap-6">
           <div className="lg:h-26 h-18 lg:w-26 w-18 bg-white flex justify-center items-center rounded-xl ">
@@ -39,7 +39,7 @@ const Carousel = () => {
         <h1 className="lg:text-[110px] text-[30px] lg:leading-[140px] leading-13 lg:text-end text-justify font-normal mt-10">
           Smiling with Healthy teeth
         </h1>
-        <p className="lg:text-[22px] text-base leading-[32px] lg:text-end text-justify lg:mt-8 mt-2" >
+        <p className="lg:text-[22px] text-base leading-[32px] text-center lg:text-end lg:mt-8 mt-2 lg:mx-1 mx-4"  >
           We have the specialists, the expertise & the equipment to help.  We
           have fully integrated technology service.
         </p>

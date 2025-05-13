@@ -3,20 +3,20 @@ import React from "react";
 
 const MidCol = () => {
   return (
-    <div className="h-[150vh] flex lg:flex-row flex-col lg:mt-[2%] mt-[50%]">
+    <div className="h-auto flex lg:flex-row flex-col lg:mt-[2%] mt-[50%] lg:mb-8 mb-4">
       <div className="flex-1 ">
-        <div className="flex flex-col h-full pt-25">
+        <div className="flex flex-col h-full lg:pt-20 pt-10">
           <div className="flex-1  mx-10 flex h-[300px] border-b border-b-gray-300 lg:mb-5 ">
             <div className="flex gap-10">
               <div className="w-[30%]">
-                <span className="lg:lg:text-[78px] text-[60px] leading-[98px] font-semibold">
+                <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
                   10
                 </span>
                 <span>
                   <svg
                     fill="#000000"
-                    width="70px"
-                    height="70px"
+                    width="40px"
+                    height="40px"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -24,7 +24,7 @@ const MidCol = () => {
                   </svg>
                 </span>
               </div>
-              <div>
+              <div className="lg:mt-0 mt-6">
                 <span className="text-[22px] leading-[32px]">
                   Certified dentists
                 </span>
@@ -38,14 +38,14 @@ const MidCol = () => {
           <div className="flex-1 mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5">
             <div className="flex  gap-10">
               <div className="w-[30%]">
-                <span className="lg:lg:text-[78px] text-[60px] leading-[98px] font-semibold">
+                <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
                   15
                 </span>
                 <span>
                   <svg
                     fill="#000000"
-                    width="70px"
-                    height="70px"
+                    width="40px"
+                    height="40px"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -53,7 +53,7 @@ const MidCol = () => {
                   </svg>
                 </span>
               </div>
-              <div>
+              <div className="lg:mt-0 mt-6">
                 <span className="text-[22px] leading-[32px]">
                   Treated patients
                 </span>
@@ -67,14 +67,14 @@ const MidCol = () => {
           <div className="flex-1  mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5">
             <div className="flex  gap-10">
               <div className="w-[30%]">
-                <span className="lg:lg:text-[78px] text-[60px] leading-[98px] font-semibold">
+                <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
                   63
                 </span>
                 <span>
                   <svg
                     fill="#000000"
-                    width="70px"
-                    height="70px"
+                    width="40px"
+                    height="40px"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -82,7 +82,7 @@ const MidCol = () => {
                   </svg>
                 </span>
               </div>
-              <div>
+              <div className="lg:mt-0 mt-6">
                 <span className="text-[22px] leading-[32px]">
                   Organized chairty
                 </span>
@@ -96,14 +96,14 @@ const MidCol = () => {
           <div className="flex-1  mx-10 flex h-[300px]   mb-5">
             <div className="flex  gap-10">
               <div className="w-[30%]">
-                <span className="lg:text-[78px] text-[60px] leading-[98px] font-semibold">
+                <span className="lg:text-[78px] text-[40px] leading-[98px] font-semibold">
                   25
                 </span>
                 <span>
                   <svg
                     fill="#000000"
-                    width="70px"
-                    height="70px"
+                    width="40px"
+                    height="40px"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -111,7 +111,7 @@ const MidCol = () => {
                   </svg>
                 </span>
               </div>
-              <div>
+              <div className="lg:mt-0 mt-6">
                 <span className="text-[22px] leading-[32px]">
                   Overseas clinics
                 </span>
@@ -125,31 +125,31 @@ const MidCol = () => {
       </div>
 
       <div className="flex-1 border-x border-x-gray-300">
-        <div className="pt-25 flex flex-col justify-center items-center mx-10">
-          <h1 className="text-[48px] leading-[58px] font-normal">
+        <div className="lg:pt-20 pt-10 flex flex-col justify-center items-center lg:mx-10 mx-6">
+          <h1 className="lg:text-[48px] text-[26px] lg:leading-[58px] font-normal">
             We creating bright beautiful smiles happen
           </h1>
-          <p className="mt-8 text-[16px] leading-[28px] text-[#888]">
+          <p className="lg:mt-8  mt-2 text-base leading-[28px] text-justify text-[#888]">
             Expanding group of dental practices across the World. With the
             skills and knowledge we have gathered over many years of working
             privately and within the ABC, we ensure your care remains at the
             heart of everything we do and make your beautiful smile.
           </p>
-          <img className="rounded-3xl  mt-10" src="/single-img-02.jpg" alt="" />
+          <img className="rounded-3xl  h-60 mt-10" src="/single-img-02.jpg" alt="" />
         </div>
       </div>
 
       <div className="flex-1 ">
-        <div className="pt-25  mx-12 ">
-          <img className="rounded-3xl" src="/single-img-03.jpg" alt="" />
-          <p className="text-[22px] leading-[32px] font-normal mt-8">
+        <div className="lg:pt-25 pt-8  lg:mx-12 mx-6 ">
+          <img className="rounded-3xl h-60 w-full" src="/single-img-03.jpg" alt="" />
+          <p className="text-[22px] leading-[32px] font-normal mt-8 lg:text-justify text-center">
             Skilled dental professionals conduct high-quality treatments
             covering all specialities, striving for excellent patient care.
           </p>
-          <div className="mt-8 flex  gap-3 items-center">
-            <span className="text-[16px] leading-[16px] font-normal hover:text-[#00272c]">
+          <div className="lg:my-8 my-4 flex gap-3 lg:justify-start justify-center items-center">
+            <p className="text-[16px] leading-[16px] font-normal hover:text-[#00272c]">
               What we Do
-            </span>
+            </p>
             <div className="bg-[#ece2da] h-[35px] w-[35px] rounded-full flex justify-center items-center p-1 cursor-pointer transition-transform group">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

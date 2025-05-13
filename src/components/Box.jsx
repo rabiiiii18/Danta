@@ -1,77 +1,48 @@
 import React from "react";
-import { motion } from "framer-motion";
+
+const services = [
+  {
+    title: "Teeth Whitening",
+    description: "Brighten your smile with safe and effective whitening treatments.",
+    img: "/box1.png",
+  },
+  {
+    title: "Root Therapy",
+    description: "Save your natural tooth and relieve pain with expert root therapy.",
+    img: "/box2.png",
+  },
+  {
+    title: "Teeth Braces",
+    description: "Straighten your teeth and improve your bite with modern braces.",
+    img: "/box3.png",
+  },
+  {
+    title: "Teeth Protection",
+    description: "Shield your teeth from damage with expert preventive care.",
+    img: "/box4.png",
+  },
+];
+
 const Box = () => {
   return (
-    <div className="flex gap-5 mx-8">
-      <div className="h-90 flex-1 flex relative group">
-        <img
-          className="absolute object-cover rounded-xl h-full w-full scale-95 group-hover:scale-100 transition-transform duration-500"
-          src="/box1.png"
-          alt=""
-        />
-        <div className="absolute inset-0 transition duration-400 rounded-xl ease-in-out group-hover:bg-black/55"></div>
-        <div className="absolute opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-40 px-6">
-          <h4 className="text-[24px] leading-[34px] text-white font-normal">
-            Teeth Whitening
-          </h4>
-          <p className="text-base leading-[28px] mt-6 text-white">
-            Brighten your smile with safe and effective whitening treatments.
-          </p>
+    <div className="flex flex-wrap lg:flex-nowrap gap-5 mx-4 lg:mx-8">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className="relative group flex-1 basis-full sm:basis-[calc(50%-1.25rem)] lg:basis-auto h-[250px] sm:h-[300px] lg:h-[400px] overflow-hidden rounded-xl"
+        >
+          <img
+            className="absolute object-cover h-full w-full rounded-xl scale-95 group-hover:scale-100 transition-transform duration-500"
+            src={service.img}
+            alt={service.title}
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/55 transition duration-300 rounded-xl" />
+          <div className="absolute bottom-0 opacity-0 translate-y-10 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 p-6 text-white">
+            <h4 className="text-lg sm:text-xl lg:text-2xl font-medium">{service.title}</h4>
+            <p className="text-sm sm:text-base mt-4">{service.description}</p>
+          </div>
         </div>
-      </div>
-
-      <div className=" h-90 flex-1 flex relative group ">
-        <img
-          className="absolute object-cover rounded-xl h-full w-full scale-95 group-hover:scale-100 transition-transform duration-300"
-          src="/box2.png"
-          alt=""
-        />
-
-        <div className="absolute inset-0 transition duration-400 rounded-xl ease-in-out group-hover:bg-black/55"></div>
-        <div className="absolute opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-40 px-6">
-          <h4 className="text-[24px] leading-[34px] text-white font-normal">
-            Root Therapy
-          </h4>
-          <p className="text-base leading-[28px] mt-6 text-white">
-            Save your natural tooth and relieve pain with expert root therapy.
-          </p>
-        </div>
-      </div>
-
-      <div className=" h-90 flex-1 flex relative group">
-        <img
-          className="absolute object-cover rounded-xl h-full w-full scale-95 group-hover:scale-100 transition-transform duration-300"
-          src="/box3.png"
-          alt=""
-        />
-
-        <div className="absolute inset-0 transition duration-400 rounded-xl ease-in-out group-hover:bg-black/55"></div>
-        <div className="absolute opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-40 px-6">
-          <h4 className="text-[24px] leading-[34px] text-white font-normal">
-            Teeth Braces
-          </h4>
-          <p className="text-base leading-[28px] mt-6 text-white">
-            Straighten your teeth and improve your bite with modern braces.
-          </p>
-        </div>
-      </div>
-      
-      <div className=" h-90 flex-1 flex relative group">
-        <img
-          className="absolute object-cover rounded-xl h-full w-full scale-95 group-hover:scale-100 transition-transform duration-300"
-          src="/box4.png"
-          alt=""
-        />
-        <div className="absolute inset-0 transition duration-400 rounded-xl ease-in-out group-hover:bg-black/55"></div>
-        <div className="absolute opacity-0 translate-y-10 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-40 px-6">
-          <h4 className="text-[24px] leading-[34px] text-white font-normal">
-            Teeth Protection
-          </h4>
-          <p className="text-base leading-[28px] mt-6 text-white">
-            Shield your teeth from damage with expert preventive care.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

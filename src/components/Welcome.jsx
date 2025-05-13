@@ -4,7 +4,7 @@ const Welcome = () => {
   return (
     <div className="h-[110vh] flex lg:flex-row  flex-col border-b border-b-gray-300 ">
       <div className="lg:w-[65%] w-full relative z-0 ">
-        <div className="pt-20 lg:ms-5 mx-4 z-10 relative  ">
+        <div className="lg:pt-20 pt-10 lg:ms-5 mx-6 z-10 relative  ">
           <span className="text-[20px] leading-[28px] font-normal">
             / Welcome to the Danta
           </span>
@@ -21,15 +21,15 @@ const Welcome = () => {
         </div>
       </div>
 
-      <div className="lg:w-[55%]  border-l border-l-gray-300 flex pt-20 lg:items-end items-center flex-col">
+      <div className="lg:w-[55%] lg:border-l lg:border-l-gray-300 flex pt-20 lg:items-end items-center lg:mx-0 mx-6 flex-col">
         <div className="lg:me-5">
           <img
-            className="rounded-3xl shadow-lg"
+            className="rounded-3xl shadow-lg w-full object-fit"
             src="/after-img.png"
             alt="Before treatment"
           />
         </div>
-        <p className="text-[22px] leading-[32px] lg:w-[70%] text-center lg:items-end mt-10 ">
+        <p className="text-[22px] leading-[32px] lg:w-[70%] text-center lg:text-center mt-10 ">
           We have the specialists, the expertise & the equipment to help. We
           have fully integrated technology service.
         </p>
