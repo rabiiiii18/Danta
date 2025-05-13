@@ -1,0 +1,51 @@
+import React from "react";
+
+const Carousel = () => {
+  return (
+    <div className="relative">
+      <img   className="w-full lg:h-[110vh] h-[40vh] object-cover object-fit" src="/bg_2.jpg" alt="" />
+      <div className="absolute bottom-0 right-0 lg:top-[22%] top-[2%] lg:w-[52%] lg:mr-8 flex flex-col lg:items-end items-center justify-center ">
+        <div className="flex gap-6">
+          <div className="lg:h-26 h-18 lg:w-26 w-18 bg-white flex justify-center items-center rounded-xl ">
+            <img
+              className="lg:w-[60px] w-[40px] lg:h-[60px] h-[40px]"
+              src="https://www.themetechmount.com/medisat/dm3/wp-content/uploads/sites/3/revslider/dentist-demo-main-home-slider/chair.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div className="lg:h-26 h-18 lg:w-26 w-18 bg-white flex justify-center items-center rounded-xl ">
+            <img
+               className="lg:w-[60px] w-[40px] lg:h-[60px] h-[40px]"
+              src="https://www.themetechmount.com/medisat/dm3/wp-content/uploads/sites/3/revslider/dentist-demo-main-home-slider/dental-care.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div className="lg:h-26 h-18 lg:w-26 w-18 bg-white flex justify-center items-center rounded-xl ">
+            <img
+             className="lg:w-[60px] w-[40px] lg:h-[60px] h-[40px]"
+              src="https://www.themetechmount.com/medisat/dm3/wp-content/uploads/sites/3/revslider/dentist-demo-main-home-slider/implant.svg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div className="lg:h-26 h-18 lg:w-26 w-18 bg-[#004149] flex justify-center items-center rounded-xl p-1 hover:bg-black  cursor-pointer">
+            <h2 className="lg:text-[16px] text-[12px] lg:leading-[30px] text-white text-center ">
+              Explore More
+            </h2>
+          </div>
+        </div>
+        <h1 className="lg:text-[110px] text-[30px] lg:leading-[140px] leading-13 lg:text-end text-justify font-normal mt-10">
+          Smiling with Healthy teeth
+        </h1>
+        <p className="lg:text-[22px] text-base leading-[32px] lg:text-end text-justify lg:mt-8 mt-2" >
+          We have the specialists, the expertise & the equipment to help.  We
+          have fully integrated technology service.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Carousel;
