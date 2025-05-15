@@ -15,16 +15,16 @@ const PatientStory = () => {
   ];
 
   return (
-    <div className="flex justify-between">
-      <div className="w-1/2 ">
-        <div className="py-30 px-8   border-e border-e-gray-300">
+    <div className="flex justify-between lg:flex-row flex-col">
+      <div className="lg:w-1/2 w-full ">
+        <div className="lg:py-30 py-10 px-8   border-e border-e-gray-300">
           <span className="text-[20px] leading-[28px] font-normal">
             / Patient Story
           </span>
-          <h1 className="text-[72px] leading-[85px] mt-5 relative  w-[112%] overflow-hidden  ">
-            Our cases & <br /> patient stories
+          <h1 className=" lg:w-[80%] lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-5 mt-4 relative  overflow-hidden  ">
+            Our cases & patient stories
           </h1>
-          <p className="text-base leading-[28px] font-normal mt-4 text-[#888] ">
+          <p className="text-base leading-[28px] font-normal mt-4 text-[#888] text-justify ">
             We take pride in helping our patients overcome injuries, relieve
             pain & return to active their healthy lifestyles.
           </p>
@@ -33,9 +33,9 @@ const PatientStory = () => {
           </button>
         </div>
       </div>
-      <div className="w-1/2  h-auto flex justify-baseline items-center z-50 ms-2">
+      <div className="lg:w-1/2  h-auto flex justify-between items-center z-50 ms-2 lg:p-2 p-10">
         <Swiper
-          modules={[Autoplay,Pagination]}
+          modules={[Autoplay, Pagination]}
           slidesPerView={1}
           spaceBetween={10}
           loop={true}
@@ -47,6 +47,10 @@ const PatientStory = () => {
             clickable: true,
           }}
           breakpoints={{
+            430: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
@@ -56,12 +60,11 @@ const PatientStory = () => {
               spaceBetween: 40,
             },
           }}
-        
           className="mySwiper"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={slide.id || index}>
-              <div className="relative rounded-xl overflow-hidden shadow-lg group">
+              <div className="relative rounded-3xl overflow-hidden shadow-lg group">
                 <img
                   src="/patient-04.png"
                   className="w-full h-auto object-cover"

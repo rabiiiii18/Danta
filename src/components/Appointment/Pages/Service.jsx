@@ -10,11 +10,11 @@ const Service = () => {
     <div>
       <Navbar />
       <div>
-        <h1 className="text-[72px] leading-[85px] text-center mt-20">
+        <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] text-center lg:mt-20 mt-10">
           We provide quality <br />
           dental care
         </h1>
-        <div className="mx-8 mt-15 grid  grid-cols-3 gap-10">
+        <div className="lg:mx-8 mx-6 lg:mt-15 mt-12 grid  lg:grid-cols-3 grid-cols-1 gap-10">
           <div className="h-[280px] flex-1 rounded-2xl overflow-hidden z-10 relative group">
             <img
               src="/service-03.png"
@@ -238,7 +238,7 @@ const Service = () => {
             </div>
           </div>
         </div>
-        <p className="text-center my-10 text-[#888]">
+        <p className="text-center mt-10 text-[#888]">
           Don’t hesitate, contact us for better help &{" "}
           <Link to="/appointment" className="text-black underline">
             Get appointment

@@ -1,9 +1,8 @@
-import React from "react";
 import Maps from "../../Maps";
 import Navbar from "../../Navbar";
 import { Controller, useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import Footer from '../../Footer'
+import Footer from "../../Footer";
 
 const Contact = () => {
   const {
@@ -14,20 +13,22 @@ const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex justify-between">
-        <div className="w-1/2">
+      <div className="flex justify-between lg:flex-row flex-col">
+        <div className="lg:w-1/2 w-ful  lg:h-auto h-96 lg:mx-1 mx-6">
           <Maps />
         </div>
-        <div className="w-1/2 ms-20">
-          <div className="w-[70%] my-10 ">
-            <h1 className="text-[72px] leading-[85px]">Drop Us a Line</h1>
-            <p className="text-base leading-[28px] text-[#888]">
+        <div className="lg:w-1/2 w-full lg:ms-20 lg:p-0 p-6">
+          <div className="lg:w-[70%] w-full lg:my-1 my-1 ">
+            <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-20">
+              Drop Us a Line
+            </h1>
+            <p className="text-base leading-[28px] text-[#888] text-justify mt-4">
               We provide a wide range of medical treatments for both local and
               international patients, and we’re very proud of the results our
               patients achieve during their recovery.
             </p>
             <form action="">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center mt-5">
                 <input
                   type="text"
                   className="border border-[#888] outline-0 rounded-md px-3 py-2 mt-2 poppins text-base text-[#888] w-[45%]"
@@ -52,17 +53,17 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button className="px-6 py-3 mt-8 text-[16px] leading-4 w-full  bg-[#004149] text-white rounded-md hover:bg-black transition-all duration-300 cursor-pointer">
+              <button className="px-6 py-3 mt-8 text-[16px] leading-4 lg:w-full  bg-[#004149] text-white rounded-md hover:bg-black transition-all duration-300 cursor-pointer">
                 Send Your Message
               </button>
             </form>
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="lg:mt-16">
         <div className="">
           <motion.h1
-            className="text-[200px] leading-[200px] text-[#EEE2D9] text-center "
+            className="lg:text-[200px] text-[60px] lg:leading-[200px] text-[#EEE2D9] text-center "
             animate={{
               x: [0, -3, -1, -2, 0],
             }}
@@ -202,7 +203,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </div>

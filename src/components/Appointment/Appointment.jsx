@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../Navbar";
 import { Asterisk, ChevronRight } from "lucide-react";
 import { Controller, useForm } from "react-hook-form";
@@ -32,13 +32,13 @@ const Appointment = () => {
   return (
     <div>
       <Navbar />
-      <div className="h-[40vh] flex justify-center items-center flex-col relative overflow-hidden">
+      <div className="lg:h-[40vh] h-[25vh] flex justify-center items-center flex-col relative overflow-hidden">
         <img
           src="/floatingbar-bg-img.png"
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          className="absolute top-0 left-0 lg:w-full lg:h-full object-cover z-[-1] "
           alt="background"
         />
-        <h1 className="text-[54px] leading-[64px]">Book Appointment </h1>
+        <h1 className="lg:text-[54px] text-[26px] lg:leading-[64px]">Book Appointment </h1>
         <div className="flex justify-center items-center mt-3 gap-1">
           <p className="text-base leading-[22px] text-[#888] ">Danta </p>
           <ChevronRight size={18} className="mt-1 text-[#888] " />
@@ -47,8 +47,8 @@ const Appointment = () => {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit, onError)}>
-        <div className=" h-auto mx-20 mt-20">
-          <div className="flex gap-20">
+        <div className=" h-auto lg:mx-20 mx-6 lg:mt-20 mt-8">
+          <div className="flex lg:flex-row flex-col lg:gap-20 gap-6">
             <div className="flex flex-col flex-1">
               <label
                 htmlFor=""
@@ -130,7 +130,7 @@ const Appointment = () => {
             ></textarea>
           </div>
 
-          <div className="flex gap-20 mt-8">
+          <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 mt-8">
             <div className="flex flex-col flex-1">
               <label
                 htmlFor=""
@@ -210,7 +210,7 @@ const Appointment = () => {
             </div>
           </div>
 
-          <div className="flex gap-20 mt-8">
+          <div className="flex lg:flex-row flex-col lg:gap-20 gap-6 mt-8">
             <div className="flex flex-col basis-1/5">
               <label
                 htmlFor=""
@@ -242,14 +242,14 @@ const Appointment = () => {
         </div>
       </form>
 
-      <div className="mt-26">
+      <div className="lg:mt-26 mt-15">
         <div className="flex justify-center flex-col items-center">
           <span className="text-[18px] leading-[28px]">/ Our Service</span>
-          <h1 className="text-[72px] leading-[85px] ">
+          <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] ">
             Discover the dental clinic
           </h1>
         </div>
-        <div className="my-20">
+        <div className="lg:my-20 my-8">
           <Box />
         </div>
         <Footer />

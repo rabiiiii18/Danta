@@ -62,35 +62,30 @@ const AboutUs = () => {
         <WorkingHour />
         <Journey />
       </div>
-      <div className=" mt-20">
+      <div className=" lg:mt-20 mt-10">
         <div className="flex justify-center items-center flex-col">
           <span className="text-[20px] leading-[28px] font-normal">
             / Work process
           </span>
-          <h1 className="text-[72px] leading-[85px] mt-5 text-center">
-            Discover the Power of <br />
+          <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-5 mt-2 text-center lg:w-[60%]">
+            Discover the Power of 
             Your Smile.
           </h1>
         </div>
-        <div className="mx-20 flex justify-between items-center my-10">
-          <div className="h-96 shadow-xl z-100 rounded-2xl w-96 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
+        <div className="mx-20 flex justify-between lg:flex-row flex-col items-center my-10">
+          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Cosmetic dentistry</h3>
             <p className="leading-[28px] text-base text-center mt-8">We focus on cosmetic dentistry aims to improve the aesthetics of teeth overall smile.</p>
           </div>
-          <div className="h-96 shadow-xl z-100 rounded-2xl w-96 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
-
-
+          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Pediatric dentistry</h3>
             <p className="leading-[28px] text-base text-center mt-8">Trained to address unique dental needs & challenges that young patients face as develop.</p>
           </div>
-
-          <div className="h-96 shadow-xl z-100 rounded-2xl w-96 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
-
+          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Dental implants</h3>
             <p className="leading-[28px] text-base text-center mt-8">A common way to replace missing teeth. They look & feel just like natural teeth way fitted</p>
           </div>
         </div>
-
       </div>
       <Footer />
 

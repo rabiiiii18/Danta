@@ -4,7 +4,7 @@ const WorkingHour = () => {
   return (
     <div className="flex justify-between lg:flex-row flex-col-reverse  lg:mx-0 mx-6 lg:gap-30 ">
 
-      <div className="relative w-full lg:w-[50%] overflow-visible lg:py-20 ">
+      <div className="relative w-full lg:w-[50%] overflow-visible lg:py-20 hidden lg:flex ">
         <div className="absolute left-0 sm:left-10 md:left-14 lg:left-20 w-full sm:w-[110%] md:w-[115%] lg:w-[105%] h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] z-10 rounded-2xl bg-black">
           <video className="w-full h-full object-cover rounded-2xl" controls>
             <source src="your-video.mp4" type="video/mp4" />
