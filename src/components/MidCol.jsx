@@ -1,12 +1,18 @@
 import { MoveUpRight } from "lucide";
 import React from "react";
+import { motion } from "framer-motion";
 
 const MidCol = () => {
   return (
-    <div className="h-auto flex lg:flex-row flex-col lg:mt-[2%] mt-[50%] lg:mb-8 mb-4">
+    <div className="h-auto flex lg:flex-row flex-col lg:mt-[1%] mt-[40%] lg:mb-8 mb-4">
       <div className="flex-1 ">
-        <div className="flex flex-col h-full lg:pt-20 pt-10">
-          <div className="flex-1  mx-10 flex h-[300px] border-b border-b-gray-300 lg:mb-5 ">
+        <div className="flex flex-col h-full lg:pt-20 pt-10 ">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="flex-1  mx-10 flex h-[300px] border-b border-b-gray-300 lg:mb-5 "
+          >
             <div className="flex gap-10">
               <div className="w-[30%]">
                 <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
@@ -33,9 +39,14 @@ const MidCol = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex-1 mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeIn" }}
+            className="flex-1 mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5"
+          >
             <div className="flex  gap-10">
               <div className="w-[30%]">
                 <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
@@ -62,9 +73,14 @@ const MidCol = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex-1  mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
+            className="flex-1  mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5"
+          >
             <div className="flex  gap-10">
               <div className="w-[30%]">
                 <span className="lg:lg:text-[78px] text-[40px] leading-[98px] font-semibold">
@@ -91,9 +107,14 @@ const MidCol = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex-1  mx-10 flex h-[300px]   mb-5">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6, ease: "easeIn" }}
+            className="flex-1  mx-10 flex h-[300px]   mb-5"
+          >
             <div className="flex  gap-10">
               <div className="w-[30%]">
                 <span className="lg:text-[78px] text-[40px] leading-[98px] font-semibold">
@@ -120,33 +141,67 @@ const MidCol = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
       <div className="flex-1 border-x border-x-gray-300">
         <div className="lg:pt-20 pt-10 flex flex-col justify-center items-center lg:mx-10 mx-6">
-          <h1 className="lg:text-[48px] text-[26px] lg:leading-[58px] font-normal">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="lg:text-[48px] text-[26px] lg:leading-[58px] font-normal"
+          >
             We creating bright beautiful smiles happen
-          </h1>
-          <p className="lg:mt-8  mt-2 text-base leading-[28px] text-justify text-[#888]">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeIn" }}
+            className="lg:mt-8  mt-2 text-base leading-[28px] text-justify text-[#888]"
+          >
             Expanding group of dental practices across the World. With the
             skills and knowledge we have gathered over many years of working
             privately and within the ABC, we ensure your care remains at the
             heart of everything we do and make your beautiful smile.
-          </p>
-          <img className="rounded-3xl  h-60 mt-10" src="/single-img-02.jpg" alt="" />
+          </motion.p>
+          <motion.img
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
+            className="rounded-3xl  h-60 mt-10"
+            src="/single-img-02.jpg"
+            alt=""
+          />
         </div>
       </div>
 
       <div className="flex-1 ">
         <div className="lg:pt-25 pt-8  lg:mx-12 mx-6 ">
-          <img className="rounded-3xl h-60 w-full" src="/single-img-03.jpg" alt="" />
-          <p className="text-[22px] leading-[32px] font-normal mt-8 lg:text-justify text-center">
+          <motion.img
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="rounded-3xl h-60 w-full"
+            src="/single-img-03.jpg"
+            alt=""
+          />
+          <motion.p
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeIn" }}
+            className="text-[22px] leading-[32px] font-normal mt-8 lg:text-justify text-center"
+          >
             Skilled dental professionals conduct high-quality treatments
             covering all specialities, striving for excellent patient care.
-          </p>
-          <div className="lg:my-8 my-4 flex gap-3 lg:justify-start justify-center items-center">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
+            className="lg:my-8 my-4 flex gap-3 lg:justify-start justify-center items-center"
+          >
             <p className="text-[16px] leading-[16px] font-normal hover:text-[#00272c]">
               What we Do
             </p>
@@ -167,7 +222,7 @@ const MidCol = () => {
                 <path d="M7 17 17 7" />
               </svg>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

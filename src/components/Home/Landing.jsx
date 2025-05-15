@@ -18,7 +18,7 @@ const Landing = () => {
    <Carousel/>
    <Welcome/>
    <MidCol/>
-   {/* <Service/> */}
+   <Service/>
    <Partnering/>
    <Doctors/>
    <Box/>

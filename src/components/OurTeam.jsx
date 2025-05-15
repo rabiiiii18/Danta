@@ -19,13 +19,23 @@ const OurTeam = () => {
         stronger
       </motion.h1> */}
       <div className="flex justify-center items-center flex-col ">
-        <p className="lg:text-[72px] text-[36px] lg:leading-[85px] font-nomal text-center  ">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5,delay:0.3, ease: 'easeIn' }}
+          className="lg:text-[72px] text-[36px] lg:leading-[85px] font-nomal text-center  ">
           Are you facing any <br />
           problem in your teeth?
-        </p>
-        <button className="px-6 lg:py-3 py-4 lg:text-base text-[18px] leading-[16px] mt-8 bg-[#004149] text-white rounded-md cursor-pointer hover:bg-black">
-          Contact Us Now
-        </button>
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7,delay:0.5, ease: 'easeIn' }}
+        >
+          <button className="px-6 lg:py-3 py-4 lg:text-base text-[18px] leading-[16px] mt-8 bg-[#004149] text-white rounded-md cursor-pointer hover:bg-black">
+            Contact Us Now
+          </button>
+        </motion.div>
         <img className="mt-10" src="/single-img-04.png" alt="" />
       </div>
     </div>

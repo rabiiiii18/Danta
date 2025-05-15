@@ -3,27 +3,43 @@ import Navbar from "../../Navbar";
 import WorkingHour from "../../WorkingHour";
 import Journey from "../../Journey";
 import Footer from "../../Footer";
-
+import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <div>
       <Navbar />
       <div className="h-auto lg:py-25 py-10 lg:px-8 px-6 flex lg:flex-row flex-col gap-10 bg-[#F7F7F7]">
         <div className="lg:w-[55%] w-full">
-          <span className="text-[20px] leading-[28px] font-normal">
+          <motion.p
+             initial={{opacity:0,y:50}}
+             whileInView={{opacity:1,y:0}}
+             transition={{duration:0.5,ease:'easeIn'}}
+          className="text-[20px] leading-[28px] font-normal">
             / Welcome to the Danta
-          </span>
-          <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] mt-5">
+          </motion.p>
+          <motion.h1
+             initial={{opacity:0,y:50}}
+             whileInView={{opacity:1,y:0}}
+             transition={{duration:0.5,delay:0.4,ease:'easeIn'}}
+          className="lg:text-[72px] text-[26px] lg:leading-[85px] mt-5">
             About Our
             Dentist Clinic
-          </h1>
-          <p className="text-base leading-[28px] lg:mt-8 mt-2 poppins text-justify  text-[#888] ">
+          </motion.h1>
+          <motion.p 
+           initial={{opacity:0,y:50}}
+           whileInView={{opacity:1,y:0}}
+           transition={{duration:0.5,delay:0.7,ease:'easeIn'}}
+          className="text-base leading-[28px] lg:mt-8 mt-2 poppins text-justify  text-[#888] ">
             Our dental expert team has worked hard to create fun, vibrant space
             where we can provide phenomenal patient care and customer service.
             Our patients are our family, and we hope you’ll feel that way the
             second you walk through our door..
-          </p>
-          <div className="flex lg:flex-row flex-col lg:mt-20 mt-10 lg:gap-20 gap-10 bg-white p-8 rounded-2xl shadow-md z-10">
+          </motion.p>
+          <motion.div 
+           initial={{opacity:0,scale:0.5}}
+           whileInView={{opacity:1,scale:1}}
+           transition={{duration:0.5,delay:0.4,ease:'easeIn'}}
+          className="flex lg:flex-row flex-col lg:mt-20 mt-10 lg:gap-20 gap-10 bg-white p-8 rounded-2xl shadow-md z-10">
             <div>
               <h1 className="text-[30px] leading-[35px] font-normal">
                 Who we are ?
@@ -50,7 +66,7 @@ const AboutUs = () => {
                 View More
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="lg:w-[45%] w-full  ">
           <div className="flex justify-end h-full">

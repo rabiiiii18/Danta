@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Service = () => {
   return (
@@ -6,13 +7,29 @@ const Service = () => {
       <div className="absolute inset-0 bg-[url('/row-bgimage-1.png')] bg-cover bg-fixed opacity-20 pointer-events-none"></div>
 
       <div className="relative z-10">
-        <span className="text-[18px] leading-[28px]">/ Our Service</span>
-        <h1 className="text-[72px] leading-[85px] ">
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          className="text-[20px] leading-[28px]"
+        >
+          / Our Service
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3, ease: "easeIn" }}
+          className="lg:text-[72px] text-[26px] lg:leading-[85px] "
+        >
           Discover the dental clinic
-        </h1>
+        </motion.h1>
       </div>
-      <div className="mt-10 flex justify-between gap-8 flex-wrap">
-        <div className="h-[340px] w-[48%] rounded-2xl overflow-hidden z-10 relative group">
+      <div className="mt-10 flex justify-between gap-8  flex-wrap">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+        className="lg:h-[340px] lg:w-[48%] rounded-2xl overflow-hidden z-10 relative group">
           <img
             src="/service-03.png"
             alt="Teeth Protection Service"
@@ -47,9 +64,13 @@ const Service = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="h-[340px] w-[48%] rounded-2xl overflow-hidden z-10 relative group">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+        className="lg:h-[340px] lg:w-[48%] rounded-2xl overflow-hidden z-10 relative group">
           <img
             src="/service-02.png"
             alt="Teeth Protection Service"
@@ -85,9 +106,13 @@ const Service = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="h-[340px] w-[48%] rounded-2xl overflow-hidden z-10 relative group">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+        className="lg:h-[340px] lg:w-[48%] rounded-2xl overflow-hidden z-10 relative group">
           <img
             src="/service-09.png"
             alt="Teeth Protection Service"
@@ -122,9 +147,13 @@ const Service = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="h-[340px] w-[48%] rounded-2xl overflow-hidden z-10 relative group">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+        className="lg:h-[340px] lg:w-[48%] rounded-2xl overflow-hidden z-10 relative group">
           <img
             src="/service-08.png"
             alt="Teeth Protection Service"
@@ -159,7 +188,7 @@ const Service = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <p className="mt-15 text-[16px] leading-[28x] text-[#ffffff80]">
         Don’t hesitate, contact us for better help and services.{" "}
