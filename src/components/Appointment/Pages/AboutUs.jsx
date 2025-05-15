@@ -8,27 +8,27 @@ const AboutUs = () => {
   return (
     <div>
       <Navbar />
-      <div className="h-auto py-25 px-8 flex gap-10 bg-[#F7F7F7]">
-        <div className="w-[55%]">
+      <div className="h-auto lg:py-25 py-10 lg:px-8 px-6 flex lg:flex-row flex-col gap-10 bg-[#F7F7F7]">
+        <div className="lg:w-[55%] w-full">
           <span className="text-[20px] leading-[28px] font-normal">
             / Welcome to the Danta
           </span>
-          <h1 className="text-[72px] leading-[85px] mt-5">
-            About Our <br />
+          <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] mt-5">
+            About Our
             Dentist Clinic
           </h1>
-          <p className="text-base leading-[28px] mt-8 poppins text-justify  text-[#888] ">
+          <p className="text-base leading-[28px] lg:mt-8 mt-2 poppins text-justify  text-[#888] ">
             Our dental expert team has worked hard to create fun, vibrant space
             where we can provide phenomenal patient care and customer service.
             Our patients are our family, and we hope you’ll feel that way the
             second you walk through our door..
           </p>
-          <div className="flex mt-20 gap-20 bg-white p-8 rounded-2xl shadow-md z-10">
+          <div className="flex lg:flex-row flex-col lg:mt-20 mt-10 lg:gap-20 gap-10 bg-white p-8 rounded-2xl shadow-md z-10">
             <div>
               <h1 className="text-[30px] leading-[35px] font-normal">
                 Who we are ?
               </h1>
-              <p className="poppins text-base leading-[28px] text-justify mt-8 text-[#888]">
+              <p className="poppins text-base leading-[28px] text-justify lg:mt-8 mt-2 text-[#888]">
                 We combine a cutting- edge dentistry with team who treats you
                 like family a, relaxing environment & an amenities that delight
                 your dental health.
@@ -41,7 +41,7 @@ const AboutUs = () => {
               <h1 className="text-[30px] leading-[35px] font-normal">
                 Our mission
               </h1>
-              <p className="poppins text-base leading-[28px] text-justify mt-8 text-[#888]">
+              <p className="poppins text-base leading-[28px] text-justify lg:mt-8 mt-2 text-[#888]">
                 Provide comprehensive & high-quality oral health -care services
                 to patients. This includes promoting oral health, preventing
                 dental diseases
@@ -52,13 +52,13 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="w-[45%]  ">
+        <div className="lg:w-[45%] w-full  ">
           <div className="flex justify-end h-full">
             <img className="rounded-3xl" src="/about-single-01.jpg" alt="" />
           </div>
         </div>
       </div>
-      <div className="bg-white">
+      <div className="bg-white h-auto">
         <WorkingHour />
         <Journey />
       </div>
