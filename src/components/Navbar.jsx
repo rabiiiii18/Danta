@@ -23,7 +23,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <div className="md:hidden absolute right-4 top-6">
           <button onClick={toggleMobileMenu} className="text-[#004149] text-2xl">
-            <Menu size={45} />
+            <Menu size={40} />
           </button>
         </div>
 

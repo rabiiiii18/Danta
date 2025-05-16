@@ -11,35 +11,35 @@ const AboutUs = () => {
       <div className="h-auto lg:py-25 py-10 lg:px-8 px-6 flex lg:flex-row flex-col gap-10 bg-[#F7F7F7]">
         <div className="lg:w-[55%] w-full">
           <motion.p
-             initial={{opacity:0,y:50}}
-             whileInView={{opacity:1,y:0}}
-             transition={{duration:0.5,ease:'easeIn'}}
-          className="text-[20px] leading-[28px] font-normal">
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeIn' }}
+            className="text-[20px] leading-[28px] font-normal">
             / Welcome to the Danta
           </motion.p>
           <motion.h1
-             initial={{opacity:0,y:50}}
-             whileInView={{opacity:1,y:0}}
-             transition={{duration:0.5,delay:0.4,ease:'easeIn'}}
-          className="lg:text-[72px] text-[26px] lg:leading-[85px] mt-5">
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: 'easeIn' }}
+            className="lg:text-[72px] text-[26px] lg:leading-[85px] mt-5">
             About Our
             Dentist Clinic
           </motion.h1>
-          <motion.p 
-           initial={{opacity:0,y:50}}
-           whileInView={{opacity:1,y:0}}
-           transition={{duration:0.5,delay:0.7,ease:'easeIn'}}
-          className="text-base leading-[28px] lg:mt-8 mt-2 poppins text-justify  text-[#888] ">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7, ease: 'easeIn' }}
+            className="text-base leading-[28px] lg:mt-8 mt-2 poppins text-justify  text-[#888] ">
             Our dental expert team has worked hard to create fun, vibrant space
             where we can provide phenomenal patient care and customer service.
             Our patients are our family, and we hope you’ll feel that way the
             second you walk through our door..
           </motion.p>
-          <motion.div 
-           initial={{opacity:0,scale:0.5}}
-           whileInView={{opacity:1,scale:1}}
-           transition={{duration:0.5,delay:0.4,ease:'easeIn'}}
-          className="flex lg:flex-row flex-col lg:mt-20 mt-10 lg:gap-20 gap-10 bg-white p-8 rounded-2xl shadow-md z-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.4, ease: 'easeIn' }}
+            className="flex lg:flex-row flex-col lg:mt-20 mt-10 lg:gap-20 gap-10 bg-white p-8 rounded-2xl shadow-md z-10">
             <div>
               <h1 className="text-[30px] leading-[35px] font-normal">
                 Who we are ?
@@ -80,27 +80,47 @@ const AboutUs = () => {
       </div>
       <div className=" lg:mt-20 mt-10">
         <div className="flex justify-center items-center flex-col">
-          <span className="text-[20px] leading-[28px] font-normal">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeIn' }}
+            className="text-[20px] leading-[28px] font-normal">
             / Work process
-          </span>
-          <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-5 mt-2 text-center lg:w-[60%]">
-            Discover the Power of 
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: 'easeIn' }}
+            className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-5 mt-2 text-center lg:w-[60%]">
+            Discover the Power of
             Your Smile.
-          </h1>
+          </motion.h1>
         </div>
-        <div className="mx-20 flex justify-between lg:flex-row flex-col items-center my-10">
-          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
+        <div className="mx-20 flex justify-between lg:flex-row flex-col items-center my-10 gap-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: 'easeIn' }}
+            className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] lg:bg-white bg-[#004149] hover:text-white  lg:text-black  text-white transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Cosmetic dentistry</h3>
             <p className="leading-[28px] text-base text-center mt-8">We focus on cosmetic dentistry aims to improve the aesthetics of teeth overall smile.</p>
-          </div>
-          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1, ease: 'easeIn' }}
+            className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] lg:bg-white bg-[#004149] hover:text-white  lg:text-black  text-white  transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Pediatric dentistry</h3>
             <p className="leading-[28px] text-base text-center mt-8">Trained to address unique dental needs & challenges that young patients face as develop.</p>
-          </div>
-          <div className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] hover:text-white transition-colors duration-500 ease-in-out">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeIn' }}
+            className="h-86 shadow-xl z-100 rounded-2xl w-86 flex justify-center items-center flex-col px-10 hover:bg-[#004149] lg:bg-white bg-[#004149] hover:text-white  lg:text-black  text-white  transition-colors duration-500 ease-in-out">
             <h3 className="text-[28px] leading-[38px]">Dental implants</h3>
             <p className="leading-[28px] text-base text-center mt-8">A common way to replace missing teeth. They look & feel just like natural teeth way fitted</p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />

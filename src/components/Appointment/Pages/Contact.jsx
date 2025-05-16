@@ -17,18 +17,34 @@ const Contact = () => {
         <div className="lg:w-1/2 w-ful  lg:h-auto h-96 lg:mx-1 mx-6">
           <Maps />
         </div>
-        <div className="lg:w-1/2 w-full lg:ms-20 lg:p-0 p-6">
+        <div
+        
+        className="lg:w-1/2 w-full lg:ms-20 lg:p-0 p-6">
           <div className="lg:w-[70%] w-full lg:my-1 my-1 ">
-            <h1 className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-20">
+            <motion.h1
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7, ease: 'easeIn' }}
+            className="lg:text-[72px] text-[26px] lg:leading-[85px] lg:mt-20">
               Drop Us a Line
-            </h1>
-            <p className="text-base leading-[28px] text-[#888] text-justify mt-4">
+            </motion.h1>
+            <motion.p
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7,delay:0.3, ease: 'easeIn' }}
+            className="text-base leading-[28px] text-[#888] text-justify mt-4">
               We provide a wide range of medical treatments for both local and
               international patients, and we’re very proud of the results our
               patients achieve during their recovery.
-            </p>
-            <form action="">
-              <div className="flex justify-between items-center mt-5">
+            </motion.p>
+            <motion.form action=""
+                 initial={{ opacity: 0, scale: 0.1 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.7,delay:0.5, ease: 'easeIn' }}
+            >
+              <div
+          
+              className="flex justify-between items-center mt-5">
                 <input
                   type="text"
                   className="border border-[#888] outline-0 rounded-md px-3 py-2 mt-2 poppins text-base text-[#888] w-[45%]"
@@ -56,28 +72,35 @@ const Contact = () => {
               <button className="px-6 py-3 mt-8 text-[16px] leading-4 lg:w-full  bg-[#004149] text-white rounded-md hover:bg-black transition-all duration-300 cursor-pointer">
                 Send Your Message
               </button>
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>
       <div className="lg:mt-16">
         <div className="">
           <motion.h1
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           
+           transition={{
+             duration: 0.7,
+             ease: "easeInOut",
+           }}
             className="lg:text-[200px] text-[60px] lg:leading-[200px] text-[#EEE2D9] text-center "
-            animate={{
-              x: [0, -3, -1, -2, 0],
-            }}
-            transition={{
-              duration: 5,
-              delay: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
           >
             Contact Us
           </motion.h1>
           <div className="flex flex-col md:flex-row gap-6 md:gap-8 mx-4 md:mx-12 my-8 mb-20">
-            <div className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
+            <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            
+            transition={{
+              duration: 0.7,
+              delay:0.1,
+              ease: "easeInOut",
+            }}
+            className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="p-4 rounded-full transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-360">
                   <svg
@@ -136,9 +159,18 @@ const Contact = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              
+              transition={{
+                duration: 0.7,
+                delay:0.3,
+                ease: "easeInOut",
+              }}
+            className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="p-4 rounded-full transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-360">
                   <svg
@@ -168,9 +200,18 @@ const Contact = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              
+              transition={{
+                duration: 0.7,
+                delay:0.5,
+                ease: "easeInOut",
+              }}
+            className="flex-1 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-gray-100 group">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <div className="p-4 rounded-full transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-360">
                   <svg
@@ -201,7 +242,7 @@ const Contact = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           <Footer />
         </div>
