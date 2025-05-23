@@ -5,8 +5,8 @@ const Welcome = () => {
   return (
     <div className="h-[110vh] flex lg:flex-row  flex-col border-b border-b-gray-300 ">
       <motion.div
-       initial={{opacity:0,x:100}}
-      whileInView={{opacity:1,x:0}}
+       initial={{opacity:0,y:20}}
+      whileInView={{opacity:1,y:0}}
       transition={{duration:0.5,delay:0.5}}
       className="lg:w-[65%] w-full relative z-0 ">
         <div className="lg:pt-20 pt-10 lg:ms-5 mx-6 z-10 relative  ">
@@ -27,8 +27,8 @@ const Welcome = () => {
       </motion.div>
 
       <motion.div 
-       initial={{opacity:0,x:-100}}
-      whileInView={{opacity:1,x:0}}
+       initial={{opacity:0,y:-20}}
+      whileInView={{opacity:1,y:0}}
       transition={{duration:0.5,delay:0.5}}
       className="lg:w-[55%] lg:border-l lg:border-l-gray-300 flex pt-20 lg:items-end items-center lg:mx-0 mx-6 flex-col">
         <div className="lg:me-5">

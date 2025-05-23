@@ -8,8 +8,8 @@ const MidCol = () => {
       <div className="flex-1 ">
         <div className="flex flex-col h-full lg:pt-20 pt-10 ">
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="flex-1  mx-10 flex h-[300px] border-b border-b-gray-300 lg:mb-5 "
           >
@@ -42,8 +42,8 @@ const MidCol = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeIn" }}
             className="flex-1 mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5"
           >
@@ -76,8 +76,8 @@ const MidCol = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
             className="flex-1  mx-10 flex  h-[300px]  border-b border-b-gray-300  mb-5"
           >
@@ -110,8 +110,8 @@ const MidCol = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6, ease: "easeIn" }}
             className="flex-1  mx-10 flex h-[300px]   mb-5"
           >
@@ -188,8 +188,8 @@ const MidCol = () => {
             alt=""
           />
           <motion.p
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeIn" }}
             className="text-[22px] leading-[32px] font-normal mt-8 lg:text-justify text-center"
           >
@@ -197,8 +197,8 @@ const MidCol = () => {
             covering all specialities, striving for excellent patient care.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
             className="lg:my-8 my-4 flex gap-3 lg:justify-start justify-center items-center"
           >
