@@ -8,7 +8,7 @@ const Carousel = () => {
         src="/bg_2.jpg"
         alt=""
       />
-      <div className="absolute bottom-0 right-0 lg:top-[22%] top-[2%] lg:w-[52%] lg:mr-8 flex flex-col lg:items-end items-center justify-center ">
+      <div className="absolute bottom-0 right-0  top-[2%] lg:w-[52%] lg:mr-8 flex flex-col lg:items-end items-center justify-center ">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,8 +55,10 @@ const Carousel = () => {
         </motion.h1>
         <motion.p
         initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 ,delay
+            : 0.5
+          }}
         className="lg:text-[22px] text-base leading-[32px] text-center lg:text-end lg:mt-8 mt-2 lg:mx-1 mx-4">
           We have the specialists, the expertise & the equipment to help. We
           have fully integrated technology service.

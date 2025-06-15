@@ -11,6 +11,7 @@ import Team from "./components/Appointment/Pages/Team.jsx";
 import Service from "./components/Appointment/Pages/Service.jsx";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
   {
     path:'/service',
     element:<Service/>
-  }
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(

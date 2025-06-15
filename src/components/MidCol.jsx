@@ -197,7 +197,7 @@ const MidCol = () => {
             covering all specialities, striving for excellent patient care.
           </motion.p>
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4, ease: "easeIn" }}
             className="lg:my-8 my-4 flex gap-3 lg:justify-start justify-center items-center"
